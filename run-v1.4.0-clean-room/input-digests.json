@@ -1,0 +1,17 @@
+{
+ "01-valid-root-aae.json": "6fef627d8fce7e6f5ae5aad60eebde8cda535654014eb3134dc6166a11b87dd5",
+ "02-expired-not-after.json": "22136dc04e95a2411b517195f2f915ac2cb8f43568f81049e8898a3745592642",
+ "03-too-early-not-before.json": "0dc077754ca091df34ccee9911d670472e5bece2bf534ae8b84ddf5e03a36888",
+ "04-revocation-endpoint-5xx.json": "04c0e6c7e9e5fdb38bcdad70a732843a4a277d010e45cd155548eb1bb93e2c31",
+ "05-single-use-replay.json": "924789381e6447a8ee347333681b061c0d61b0f620d7e9a4e1fef6ac64fdd7a5",
+ "06-delegation-valid-depth-2.json": "3be1fd32edc3984fb0876616143e9aee47253033abb70c877005a3103abc9eab",
+ "07-delegation-action-superset.json": "950aa479dd8f27aab832ec7d5c270e0784bb3096fbe923d5d21a78201caf74b6",
+ "08-delegation-constraint-relaxation.json": "d9661da0806764c20a2b624ae6c078e7fd9cb410c8e483c7e3a0e357e88f6d0e",
+ "09-delegation-depth-exceeded.json": "9beedf202dc487443dfd230e4da211d3f27f5acd8cc88d86d4ceaf57d336184d",
+ "10-delegation-cycle-detection.json": "ce91459ec6ce16acd204a93f7f99d5a58edce7bcf200020975202a87e105144e",
+ "11-delegation-cascade-revocation.json": "42d8188de90395a1dc70006ceb3211f17f9cc43ea1da728b2466f56bc83ef80a",
+ "12-signing-authority-mismatch.json": "0d2362c3ae396be726f077747d163cc414e3c12afe6081daeca2666b8ebac2b3",
+ "13-unrecognized-required-constraint.json": "4094d4fca38e952149e8647c626331f975c9b0d280d505bc3649ed337ebb1151",
+ "14-cty-header-wrong.json": "331b9fc22222fd0339620a741741aed0a4bf1f42ec221f044c7cad9a6974deec",
+ "15-currency-mismatch-delegation.json": "06f6c3e7bdca899156a64be935bebde339a6d9f9bf7deebf0617b6d9fe3b5640"
+}

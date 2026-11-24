@@ -1,0 +1,10 @@
+{
+ "verifier_sha256": "f9aec0d6b3f6be73bf81d1ffce5805609aafee35b32d5ad44a55e31beadcf07e",
+ "environment": {
+  "python": "3.12.14",
+  "cryptography": "44.0.3",
+  "os": "Linux-5.10.134-18.0.13.lifsea8.x86_64-x86_64-with-glibc2.41",
+  "arch": "x86_64",
+  "runner_cwd_userless": true
+ }
+}

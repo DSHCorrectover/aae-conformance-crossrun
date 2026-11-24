@@ -1,0 +1,152 @@
+[
+ {
+  "vector": "aae-vector-01",
+  "file": "01-valid-root-aae.json",
+  "our_result": "ACCEPT",
+  "our_step": null,
+  "our_reason": null,
+  "expected_result": "ACCEPT",
+  "expected_step": 7,
+  "match": true
+ },
+ {
+  "vector": "aae-vector-02",
+  "file": "02-expired-not-after.json",
+  "our_result": "REJECT",
+  "our_step": 3,
+  "our_reason": "outside_validity_window",
+  "expected_result": "REJECT",
+  "expected_step": 3,
+  "match": true
+ },
+ {
+  "vector": "aae-vector-03",
+  "file": "03-too-early-not-before.json",
+  "our_result": "REJECT",
+  "our_step": 3,
+  "our_reason": "outside_validity_window",
+  "expected_result": "REJECT",
+  "expected_step": 3,
+  "match": true
+ },
+ {
+  "vector": "aae-vector-04",
+  "file": "04-revocation-endpoint-5xx.json",
+  "our_result": "REJECT",
+  "our_step": 8,
+  "our_reason": "revocation_status_indeterminate",
+  "expected_result": "REJECT",
+  "expected_step": 8,
+  "match": true
+ },
+ {
+  "vector": "aae-vector-05",
+  "file": "05-single-use-replay.json",
+  "our_result": "REJECT",
+  "our_step": 5,
+  "our_reason": "single_use_already_consumed",
+  "expected_result": "REJECT",
+  "expected_step": 5,
+  "match": true
+ },
+ {
+  "vector": "aae-vector-06",
+  "file": "06-delegation-valid-depth-2.json",
+  "our_result": "ACCEPT",
+  "our_step": null,
+  "our_reason": null,
+  "expected_result": "ACCEPT",
+  "expected_step": 9,
+  "match": true
+ },
+ {
+  "vector": "aae-vector-07",
+  "file": "07-delegation-action-superset.json",
+  "our_result": "REJECT",
+  "our_step": 9,
+  "our_reason": "delegation_action_superset",
+  "expected_result": "REJECT",
+  "expected_step": 9,
+  "match": true
+ },
+ {
+  "vector": "aae-vector-08",
+  "file": "08-delegation-constraint-relaxation.json",
+  "our_result": "REJECT",
+  "our_step": 9,
+  "our_reason": "delegation_constraint_relaxation",
+  "expected_result": "REJECT",
+  "expected_step": 9,
+  "match": true
+ },
+ {
+  "vector": "aae-vector-09",
+  "file": "09-delegation-depth-exceeded.json",
+  "our_result": "REJECT",
+  "our_step": 9,
+  "our_reason": "delegation_depth_exceeded",
+  "expected_result": "REJECT",
+  "expected_step": 9,
+  "match": true
+ },
+ {
+  "vector": "aae-vector-10",
+  "file": "10-delegation-cycle-detection.json",
+  "our_result": "REJECT",
+  "our_step": 9,
+  "our_reason": "delegation_cycle",
+  "expected_result": "REJECT",
+  "expected_step": 9,
+  "match": true
+ },
+ {
+  "vector": "aae-vector-11",
+  "file": "11-delegation-cascade-revocation.json",
+  "our_result": "REJECT",
+  "our_step": 9,
+  "our_reason": "ancestor_step8:revoked",
+  "expected_result": "REJECT",
+  "expected_step": 9,
+  "match": true
+ },
+ {
+  "vector": "aae-vector-12",
+  "file": "12-signing-authority-mismatch.json",
+  "our_result": "REJECT",
+  "our_step": 1,
+  "our_reason": "signing_authority_mismatch",
+  "expected_result": "REJECT",
+  "expected_step": 1,
+  "match": true
+ },
+ {
+  "vector": "aae-vector-13",
+  "file": "13-unrecognized-required-constraint.json",
+  "our_result": "REJECT",
+  "our_step": 7,
+  "our_reason": "unrecognized_required_constraint",
+  "expected_result": "REJECT",
+  "expected_step": 7,
+  "match": true
+ },
+ {
+  "vector": "aae-vector-14",
+  "file": "14-cty-header-wrong.json",
+  "our_result": "REJECT",
+  "our_step": 2,
+  "our_reason": "cty_mismatch",
+  "expected_result": "REJECT",
+  "expected_step": 2,
+  "match": true
+ },
+ {
+  "vector": "aae-vector-15",
+  "file": "15-currency-mismatch-delegation.json",
+  "our_result": "REJECT",
+  "our_step": 9,
+  "our_reason": "delegation_currency_mismatch",
+  "expected_result": "REJECT",
+  "expected_step": 9,
+  "match": true
+ }
+]
